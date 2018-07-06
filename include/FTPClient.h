@@ -23,9 +23,6 @@ class FTPClient
 
     private:
         sf::Ftp ftp;
-        sf::Ftp::Response response;
-        sf::Ftp::DirectoryResponse directoryResponse;
-        sf::Ftp::ListingResponse listingResponse;
 
         std::vector<std::string> listing;
 
@@ -35,6 +32,10 @@ class FTPClient
 
         std::string username;
         std::string password;
+        std::string directory;
+        std::string file;
+        std::string renamedFile;
+        std::string filePath;
 };
 
 #endif // FTPCLIENT_H
